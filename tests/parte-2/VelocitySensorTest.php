@@ -26,7 +26,7 @@
 
     public function test_getSpeedLevel_severeExcessSpeedCase() {
       $sensor = new VelocitySensor(200);
-      $this->assertEquals("Exceso moderado", $sensor->getSpeedLevel());
+      $this->assertEquals("Exceso grave", $sensor->getSpeedLevel());
     }
 
   } 
