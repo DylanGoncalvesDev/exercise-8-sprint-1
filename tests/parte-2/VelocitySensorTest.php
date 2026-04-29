@@ -18,6 +18,11 @@
       $sensor = new VelocitySensor(76);
       $this->assertEquals("Exceso leve", $sensor->getSpeedLevel());
     }
+    
+    public function test_getSpeedLevel_moderateExcessSpeedCase(){
+      $sensor = new VelocitySensor(91);
+      $this->assertEquals("Exceso moderado", $sensor->getSpeedLevel());
+    }
   } 
      
 ?>
