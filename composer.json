@@ -1,5 +1,34 @@
 {
+    "name": "Dylan-Goncalves/exercise-8-sprint-1",
+    "description": "Exercise eight of the sprint one",
+    "type": "project",
+    "license": "MIT",
+
+    "authors": [
+        {
+            "name": "Dylan-Goncalves",
+            "email": "dylanphx93@gmail.com"
+        }
+    ],
+
+    "require": {},
+
     "require-dev": {
         "phpunit/phpunit": "^11.5"
-    }
+    },
+
+    "autoload": {
+        "psr-4": {
+            "Src\\": "src/"
+        }
+    },
+
+    "autoload-dev": {
+        "psr-4": {
+            "Tests\\": "tests/"
+        }
+    },
+
+    "minimum-stability": "stable"
+
 }
