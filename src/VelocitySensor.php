@@ -16,13 +16,11 @@ class VelocitySensor  {
                return "Velocidad adecuada";
      } elseif ($this->velocity > 60 && $this->velocity <= 80) {
                return "Exceso leve";
-     }
-
-
+     } elseif ($this->velocity > 80 && $this->velocity <= 100)
+               return "Exceso moderado";
+     
 }
   
-
-
-
+}
 
 ?>
