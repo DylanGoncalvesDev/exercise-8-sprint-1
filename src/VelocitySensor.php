@@ -12,8 +12,9 @@ class VelocitySensor  {
    public function getSpeedLevel(){
      if ($this->velocity < 30) {
          return "Muy lento";
-     }
-   }
+     } elseif ($this->velocity >= 30 && $this->velocity <= 60) {
+               return "Velocidad adecuada";
+     } 
 
 
 }
