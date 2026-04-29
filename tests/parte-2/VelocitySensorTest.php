@@ -4,10 +4,15 @@
 
   class VelocitySensorTest extends TestCase {
     
-    public function test_getSpeedLevel(){
+    public function test_getSpeedLevel_lowSpeedCase(){
       $sensor =  new VelocitySensor(10);
       $this->assertEquals("Muy lento", $sensor->getSpeedLevel());
     }
-  }
+
+    public function test_getSpeedLevel_normalSpeedCase(){
+      $sensor = new VelocitySensor(42);
+      $this->assertEquals("Velocidad adecuada", $sensor->getSpeedLevel());
+    }
+  } 
      
 ?>
